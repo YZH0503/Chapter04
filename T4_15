@@ -1,0 +1,28 @@
+/*
+Filename:T4_15.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:输入每位销售员的上周毛利，然后计算其收入
+*/
+#include <iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+    cout << "Enter sales in dollars (-1 to end):";
+    double x,y;
+    cin>>x;
+    while(x!=EOF)
+    {
+        y=200+x*0.09;
+        cout<<setprecision(2)<<fixed;
+        cout<<"Salary is: $"<<y;
+        cout <<"\n"<< "Enter sales in dollars (-1 to end):";
+        cin>>x;
+    }
+    return 0;
+}
