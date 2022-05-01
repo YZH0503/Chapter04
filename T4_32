@@ -1,0 +1,24 @@
+/*
+Filename:T4_32.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:判断三个数是否可以组成三角形的三个边
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double a,b,c;
+    cin>>a>>b>>c;
+    if(a+b<=c||a+c<=b||b+c<=a)
+    {
+        cout<<"不可以组成一个三角形";
+    }
+    else
+        cout<<"可以组成一个三角形";
+    return 0;
+}
