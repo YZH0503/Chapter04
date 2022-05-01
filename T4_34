@@ -1,0 +1,48 @@
+/*
+Filename:T4_34.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:输出一个非负整数的阶乘，估算数学常量e的值并且输出指数函数e^x的值（x由用户输入）
+*/
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+   int a,b=1,c=1;
+   cin>>a;
+   while(b<=a)
+   {
+       c=c*b;
+       b++;
+
+   }
+   cout<<c;
+    cout<<"========="<<endl;
+    int n,i;
+    double e=1;
+    long long t=1;
+
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        t=t*i;
+        e=e+1.0/t;
+    }
+    cout<<fixed<<setprecision(10)<<e<<endl;
+     cout<<"========="<<endl;
+     int q,f;
+     cin>>f;
+     double m=1,z=1;
+     for(int i=1;i<=f;i++)
+     {
+         m=m*i;
+         q=pow(z,f);
+     }
+     cout<<q<<endl;
+    return 0;
+}
