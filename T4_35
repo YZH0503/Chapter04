@@ -1,0 +1,19 @@
+/*
+Filename:T4_35.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:采用C++11的列表初始化执行任务
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    unsigned int studentCounter=0;
+    double initialBalance=1000.0;
+
+    return 0;
+}
