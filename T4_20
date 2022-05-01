@@ -1,0 +1,36 @@
+/*
+Filename:T4_20.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:确认用户输入的有效性
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int passes=0,failures=0,studentCounter=1;
+    while(studentCounter<=10)
+    {
+        cout<<"Enter result (1=pass,2=fail): ";
+        int result=0;
+        cin>>result;
+        while(result!=1&&result!=2)
+        {
+            cout<<"Please write a correct number"<<endl;
+            cin>>result;
+        }
+        if(result==1)
+            passes+=1;
+        else
+            failures+=1;
+        studentCounter+=1;
+    }
+        cout<<"Passed"<<passes<<"\nFailed"<<failures<<endl;
+        if(passes>8)
+            cout<<"Bonus to instuctor!"<<endl;
+    return 0;
+}
