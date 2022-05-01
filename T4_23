@@ -1,0 +1,39 @@
+/*
+Filename:T4_23.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:缩进技巧解决else的摇摆问题
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,y;
+    cout<<"Please write x and y: "<<endl;
+    cin>>x>>y;
+    if(x<10)
+    if(y>10)
+    cout<<"*****"<<endl;
+    else
+    cout<<"#####"<<endl;
+    cout<<"$$$$$"<<endl;
+    cout<<"============"<<endl;
+
+    cout<<"Please write x and y: "<<endl;
+    cin>>x>>y;
+    if(x<10)
+    {
+    if(y>10)
+    cout<<"*****"<<endl;
+    }
+    else
+    {
+    cout<<"#####"<<endl;
+    cout<<"$$$$$"<<endl;
+    }
+    return 0;
+}
