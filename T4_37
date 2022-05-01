@@ -1,0 +1,25 @@
+/*
+Filename:T4_37.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:世界人口增长
+*/
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    cout<<fixed<<setprecision(3);
+    double  a=75,b=0.05;
+    double m=a,n=a;
+    for(int i=1;i<76;i++)
+    {
+        n=m*0.05;
+        m=m+m*0.05;
+        cout<<i<<"\t"<<m<<"\t"<<n<<"\t"<<endl;
+    }
+    return 0;
+}
