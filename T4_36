@@ -1,0 +1,29 @@
+/*
+Filename:T4_36.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:加强加密系统增强隐私
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,a,b,c,d,y;
+    cin>>x;
+    d=x%10;
+    x=x/10;
+    c=x%10;
+    x=x/10;
+    b=x%10;
+    x=x/10;
+    a=x;
+    a=(a+7)%10,b=(b+7)%10;c=(c+7)%10;d=(d+7)%10;
+    y=a,a=c,c=y;
+    y=b,b=d,d=y;
+    cout<<a<<b<<c<<d;
+    return 0;
+}
