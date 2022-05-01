@@ -1,0 +1,22 @@
+/*
+Filename:T4_29.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:无限循环2的倍数
+*/
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	long long int a = 1;
+	while (1)
+	{
+		a = a * 2;
+		cout << a << endl;
+	}
+	return 0;
+}
