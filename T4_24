@@ -1,0 +1,57 @@
+/*
+Filename:T4_24.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Mar 19th, 2022
+College: School of Computer Science and InformationEngineering
+Function:更高难度的else缩进问题
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int x,y;
+    cout<<"Please write x and y: "<<endl;
+    cin>>x>>y;
+    if(y==8)
+    {if(x==5)
+    cout<<"@@@@@"<<endl;
+    else
+    cout<<"#####"<<endl;}
+    cout<<"$$$$$"<<endl;
+    cout<<"&&&&&"<<endl;
+
+
+    cout<<"============"<<endl;
+    if(y==8)
+    {
+        if(x==5)cout<<"@@@@@"<<endl;
+        else{
+    cout<<"#####"<<endl;
+    cout<<"$$$$$"<<endl;
+    cout<<"&&&&&"<<endl;}
+    }
+
+    cout<<"============"<<endl;
+    if(y==8)
+    {if(x==5)
+    cout<<"@@@@@"<<endl;
+    else
+    {cout<<"#####"<<endl;
+    cout<<"$$$$$"<<endl;}
+    }
+    cout<<"&&&&&"<<endl;
+
+    cout<<"============"<<endl;
+     if(y==8){
+    if(x==5)
+    cout<<"@@@@@"<<endl;}
+    else
+    {cout<<"#####"<<endl;
+    cout<<"$$$$$"<<endl;
+    cout<<"&&&&&"<<endl;}
+    return 0;
+}
